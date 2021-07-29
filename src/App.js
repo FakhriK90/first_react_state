@@ -52,7 +52,8 @@ componentWillUnmount() {
             <div>
               <img src={this.state.imageSrc} id="img-change" alt="" width="300" height="300"/>  
             </div>
-            <h5> The last component was mounted since : {this.state.date} </h5>
+            <h5> The last component was mounted since : {this.state.date
+            } </h5>
           </div>
         )}
         
