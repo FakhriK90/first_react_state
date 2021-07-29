@@ -47,6 +47,11 @@ p{
 .btn span {
   position: relative; 
   z-index: 1;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: fantasy;
+  letter-spacing: 3px;
 }
 
 .btn:after {

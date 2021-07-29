@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Pic from './Moi.jpg'
 import ReactDOM from 'react-dom';
 import './App.css'
 
@@ -11,7 +11,7 @@ class Profile extends React.Component {
       fullName: "Fakhri Abousaoud Kahouach",
       bio: "diploma of higher technician in geology of reservoirs and Full-Stack Js web developper in progress.",
       profession: "geophysicist and at the same time a poet",
-      imageSrc:"https://scontent.ftun9-1.fna.fbcdn.net/v/t1.6435-9/53272254_2357069554305399_8937195187646496768_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=U3eNHoDd57gAX-F3hxx&_nc_ht=scontent.ftun9-1.fna&oh=ed49ac9aaa5b55c1dbc60b7352ce8011&oe=60F9A70D",
+      imageSrc:Pic,
       show: true,
       date: 0,
     };
@@ -50,13 +50,13 @@ componentWillUnmount() {
           </h2>
   
             <div>
-              <img src={this.state.imageSrc} id="img-change" alt="" width="400" height="400"/>  
+              <img src={this.state.imageSrc} id="img-change" alt="" width="300" height="300"/>  
             </div>
             <h5> The last component was mounted since : {this.state.date} </h5>
           </div>
         )}
         
-        <button className="btn" onClick={this.handleShowPerson}><span>Show / Hide</span></button>
+        <button className="btn" onClick={this.handleShowPerson}><span> {this.state.show? 'Hide' : ' Show'} </span></button>
       </div>
     );
   }
